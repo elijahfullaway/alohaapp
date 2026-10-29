@@ -1,6 +1,6 @@
 # Aloha: plan hangouts - Project Summary
 
-Last updated: October 28, 2026
+Last updated: October 29, 2026
 
 **How to use this file:** It is the handoff between sessions. Any new session (a chat or Claude Code) should read this file first, then the product brief, then say where things stand and what the next step is. At the end of every session, update it.
 
@@ -10,16 +10,16 @@ A private mobile app (working name Aloha, store title "Aloha: plan hangouts") wh
 ## Where we are
 - Planning is complete: discovery questions, competitor and platform research, a roadmap document, and a product brief (version 1).
 - An audit of the brief found seven issues. All seven fixes were accepted.
-- The founder is reviewing the brief. The Claude Design prompt is ON HOLD until he says he is ready.
-- Accounts and tools (Apple Developer, GitHub, Expo, Supabase, domain, Windows tools): status not yet reported.
+- The founder has reviewed the brief and accepted all five assumptions (October 29, 2026). The brief is stored in the repo as docs/brief.md.
+- The Claude Design prompt is the next piece of work. Confirm the founder is ready before writing it.
+- Accounts and tools: private GitHub repo (alohaapp) created and connected to the Claude Project, so chat sessions can read the project files (click "Sync now" after changes). Expo and Supabase accounts created, profiles only, no setup yet; whether they are linked to GitHub is still to confirm. Git is not yet installed on the founder's Windows PC. Apple Developer account, domain and other Windows tools: status not yet reported.
 - No code has been written.
 
 ## Next steps, in order
-1. Founder reviews the brief and confirms the five assumptions (brief section 16).
-2. Write the Claude Design prompt for the first screens and make the prototype.
-3. Finalize CLAUDE.md and ARCHITECTURE.md, create the project folder, connect it to GitHub, first commit.
-4. Build in thin slices, finishing each before starting the next: (1) sign-in and app running on the phone; (2) invite link and connecting two accounts; (3) Google Calendar connection, one window, viewing a friend's windows; (4) request, accept, decline, tentative holds on calendars; (5) named lists, audience controls, notice setting; (6) hold timing rules and notifications.
-5. Small first test (3 to 5 people), then the 25-person test on stage 1, then stage 2 added (interests, nudges, suggestions).
+1. Write the Claude Design prompt for the first screens and make the prototype.
+2. Finalize CLAUDE.md and ARCHITECTURE.md, create the project folder, connect it to GitHub, first commit.
+3. Build in thin slices, finishing each before starting the next: (1) sign-in and app running on the phone; (2) invite link and connecting two accounts; (3) Google Calendar connection, one window, viewing a friend's windows; (4) request, accept, decline, tentative holds on calendars; (5) named lists, audience controls, notice setting; (6) hold timing rules and notifications.
+4. Small first test (3 to 5 people), then the 25-person test on stage 1, then stage 2 added (interests, nudges, suggestions).
 
 ## Key decisions
 **Product**
@@ -30,13 +30,14 @@ A private mobile app (working name Aloha, store title "Aloha: plan hangouts") wh
 **Sharing**
 - Free windows contain date and time range, lengths, call or in person or either, travel range, optional activity tag, and a notice setting.
 - Audience is set per window using private, user-named lists plus per-person overrides. Lists are never visible to the people in them.
-- Invites are a link first, code as backup, one-use, 7-day expiry (assumption).
+- Invites are a link first, code as backup, one-use, 7-day expiry (confirmed).
 
 **Requests and holds**
-- Notice setting per window: day ahead (default, 12 hours), same day (4 hours, assumption), last-minute (1 hour, assumption).
+- Notice setting per window: day ahead (default, 12 hours), same day (4 hours), last-minute (1 hour). All confirmed.
 - Hold counted from the time the request is sent, running continuously, no overnight pause. Exact rules are in brief section 7.
 - Declines and expiries use kind, neutral messages that never mention another request. Requesters never see who else asked.
-- Tentative entry on both real calendars, generic private titles (assumption). Conflicts re-checked at accept time.
+- Tentative entry on both real calendars, generic private titles (confirmed). Conflicts re-checked at accept time (confirmed).
+- Removing a connection cancels pending requests (confirmed).
 
 **Calendars and accounts**
 - Sign-in with Google, Apple or email. Only Google Calendar for version 1, and the calendar is optional.
@@ -59,7 +60,7 @@ A private mobile app (working name Aloha, store title "Aloha: plan hangouts") wh
 - Claude Pro for design and code. Budget about $20 to $40 a month plus $99 Apple account and a domain.
 - Timeline: first small test in about 2 months, 25-person test about 3, all of version 1 about 4.
 
-## Assumptions awaiting confirmation
+## Assumptions (all confirmed October 29, 2026)
 - Same-day notice 4 hours, last-minute notice 1 hour.
 - Invite links expire after 7 days and work once.
 - Removing a connection cancels pending requests.
@@ -72,7 +73,7 @@ A private mobile app (working name Aloha, store title "Aloha: plan hangouts") wh
 - Calendar permissions concern some people. Explain plainly and make disconnecting easy.
 
 ## Reminders by stage
-- **Before code:** brief reviewed (in progress), ARCHITECTURE.md approved, repo, CLAUDE.md, this file, quality checks from the first commit.
+- **Before code:** brief reviewed (done), ARCHITECTURE.md approved, repo, CLAUDE.md, this file, quality checks from the first commit.
 - **Every session:** read this file, plan first, one small slice, test, commit, update this file, clear.
 - **Before the first test:** security pass by a fresh session, row-level security tests, secrets check, separate dev and live databases, Sentry.
 - **Before the 25-person test:** developer-friend review, privacy policy published, Google "In production," tester instructions, start Google verification.
@@ -81,3 +82,4 @@ A private mobile app (working name Aloha, store title "Aloha: plan hangouts") wh
 
 ## Session log
 - Oct 28, 2026: Planning completed, brief drafted and audited, project files drafted. Next: founder reviews the brief.
+- Oct 29, 2026: Created the private GitHub repo and uploaded the project files, connected it to the Claude Project, created Expo and Supabase accounts. Founder reviewed the brief and accepted all five assumptions; brief saved as docs/brief.md. Next: Claude Design prompt, once the founder says he is ready.
